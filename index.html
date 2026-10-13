@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opsera Forge Builder GTM Blog</title>
+  <meta name="description" content="Essays on product builders, legacy modernization, and how product work is changing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F3F3F0;
+      --card: #FFFFFF;
+      --ink: #14161A;
+      --muted: #5A5F68;
+      --faint: #8A8F98;
+      --line: #DCDCD5;
+      --accent: #3B5BFF;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111317;
+        --card: #1A1D22;
+        --ink: #F1F1EE;
+        --muted: #A6AAB2;
+        --faint: #7C818A;
+        --line: #2C3038;
+        --accent: #7B93FF;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 16px/1.6 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 72px 16px 96px; }
+    h1 {
+      font: 600 clamp(36px, 6vw, 56px)/1.06 'Inter Tight', sans-serif;
+      letter-spacing: -.02em;
+      text-wrap: balance;
+    }
+    .posts { list-style: none; margin-top: 56px; display: grid; gap: 16px; }
+    .post a {
+      display: block;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color .15s, transform .15s, box-shadow .15s;
+    }
+    .post a:hover, .post a:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(20, 22, 26, .08);
+      outline: none;
+    }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--faint); }
+    .tag { color: var(--accent); font-weight: 500; }
+    .post h2 {
+      margin-top: 10px;
+      font: 600 clamp(22px, 3.2vw, 28px)/1.2 'Inter Tight', sans-serif;
+      letter-spacing: -.01em;
+      text-wrap: balance;
+    }
+    .post p { margin-top: 10px; color: var(--muted); }
+    .read { display: inline-block; margin-top: 18px; font-weight: 500; color: var(--accent); }
+    .read::after { content: ' →'; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Blog posts relating to Opsera Forge Builder GTM</h1>
+
+    <ul class="posts">
+      <li class="post">
+        <a href="posts/why-product-managers-are-becoming-builders.html">
+          <div class="meta"><span class="tag">Product · Forge</span><span>5 October 2026</span><span>12 min read</span></div>
+          <h2>Why Product Managers Are Becoming Builders: Lessons From Stripe, Whatnot, and Laurel</h2>
+          <p>Product, design, and engineering used to hand work off in sequence. Here's what changes when PMs build.</p>
+          <span class="read">Read post</span>
+        </a>
+      </li>
+      <li class="post">
+        <a href="posts/voice-of-the-builders.html">
+          <div class="meta"><span class="tag">Product · Forge</span><span>5 October 2026</span><span>18 min read</span></div>
+          <h2>The Voice of the Builders: What Product Managers Say the Job Became</h2>
+          <p>Product builders grew 10x in a year while traditional PM roles shrank. PMs at Dolby, TikTok Shop, and Shield AI describe the change.</p>
+          <span class="read">Read post</span>
+        </a>
+      </li>
+      <li class="post">
+        <a href="posts/legacy-modernization.html">
+          <div class="meta"><span class="tag">Modernization · Forge</span><span>5 October 2026</span><span>18 min read</span></div>
+          <h2>Legacy Modernization: From One-Time Migration to Outcome-Driven Program</h2>
+          <p>Why one-time migrations underdeliver, and how an ongoing program keeps legacy systems from going stale again.</p>
+          <span class="read">Read post</span>
+        </a>
+      </li>
+    </ul>
+
+  </main>
+</body>
+</html>
